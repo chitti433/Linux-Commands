@@ -1,0 +1,261 @@
+to check the tsm status-tsm status -v
+
+to stop the tsm- tsm stop
+
+to start the tsm- tsm start
+
+to create the new directory- mkdir
+
+to delete the directory- rmdir
+
+to change the current directory- cd
+
+if you want to see the data in the file- cat
+
+to copy a file or directory- cp
+
+to move file or directory- mv
+
+If we need to see the postgres password - tsm configuration get -k pgsql.readonly_password
+
+if you want to see first ten lines of file- head
+
+if you want to see first 3 lines of a file - head -n3 <file name> (-n3 flag is used to see the first 3 lines)
+
+if you want to see last ten lines of the file- tail
+
+if you want to see last 3 lines of a file - tail -n3 <file name> (-n3 flag is used to see the last 3 lines)
+`
+if you want to see how may lines and words in the file - wc <file name>
+
+if you want to see the calender in your terminal - cal
+
+if you want to see the date in your server - date
+
+if you want run two commands in single time = <command1> ; <command2> or <command1> && <command2> (ex:- ls ; pwd , ls && pwd) here while using ; if one command is failed it will execute second command but by using && if first command is failed it will not execute other commands
+
+if you want to change the owner of file or directory- chown
+
+if you want to change the permissions of the file or directory- chmod
+
+if yo want to see the server ip adresses or host ip- hostname -i
+
+if you want to see the all running processes in system- ps -ef
+
+if you want to see the purticular processes in system- ps-ef|grep <particular processes>
+
+if you want to see the curent working directory- pwd
+
+if you want to kill any processes- kill -9
+
+if you want to know pid of processes - pidof <processes name>
+
+if you want to see all pid's of the processes - ps -ux
+
+if you want to check the memory of the server- df -h
+
+if you want to check space used by the folder - du -h (this command is used to give all the size of the files in the direcotrey)
+
+if you want to see only the space using by directory with out displaying files size - du -sh (in this command s is summary and h is human readable)
+
+if you want to refresh the command at regular intervels - watch <command> (ex:- watch free -g this watch command will exeute free -g command at regular intervels)
+
+if you want to increase the interval of the watch command - watch -n 1 free -g (here 1 is for every one sec)
+
+if you want to see the network like to which net you are connected and ip adresses - ifconfig
+
+if you stop the net what you have connected - ipconfig <internet type> down
+
+if you need to tar/zip any file - tar -cvf <filename.tar> <filename>
+
+if you need to untar the file - tar -xvf <file name>
+
+if you want to reconnect to the net - ipconfig <internet type> up 
+
+if you want to see the ram size- free -h
+
+if you want to save a file- ESC:WQ!
+
+if we want to add user in linux - sudo useradd <user name> -m -s /bin/bash -g <group name> -c <comments> (-m is used to create default directorey in home directorey and -s is used for default shell and -g is used for group name -c is used for comments)
+
+if you want to create password for user - sudo passwd <user name>
+
+if you want to delete any user in linux - sudo userdel <user name> (this command will delete the user, password and other but it wont delete the default directorey in home)
+
+if you want to delete user with his direcotrey - sudo userdel -r <user name> (-r flag is used to delete the directorey of the user)
+
+if you want to see the groups in linux - cat /etc/group
+
+if you want to add any group in linux - sudo groupadd <group name>
+
+if you want to delete the group in linux - sudo groupdel <group name>
+
+if you want to assign user to a group in linux - sudo gpasswd -a <user name> <group name> (-a flag is used for adding user)
+
+if you want to remove user from the group in linux - sudo gpasswd -d <user name> <group name> (-d flag is used for deleting user)
+
+If you want to add any msg when you open linux terminal we need to add that msg in bashrc file - .bashrc (.bashrc file is located in /home directorey and when you are opening the terminal the .bashrc file script will be executed by default)
+
+if you want to check purticular port number status then - netstat -an | grep ':<port number>' (-an flag is stands for -a=all and n=numerical netstat -an | grep ':1521'
+
+if you want to see list of files- ls
+
+if you wnat to svae the content of the directorey(files names) which are in directorey in a file then the command is - ls -lS > filename
+
+if you wnat to list out all the directories - ls -d */
+
+if you cretaed the directory name by giving space(kothuru rajesh) then how we can enter in to that directorey - cd "kothuru rajesh" cd 'kothuru Rajesh'
+
+if we need to see the content in a file with line numbers(if there is a empty line it will skip that) - cat -b <file name>
+
+if we need to see the content in a file with line numbers - cat -n <file name>
+
+if we need to redirect content of a file in another file - cat <file name> > <new file name>
+
+if we need to append the new output with the previous output - cat <file name> >> <new file name>
+
+if we need to create a sub-direcotrey in a direcorey - mkdir <directorey name>/<sub-direcotrey name>
+
+if we nned to create a direcorey and sub-direcotrey which is not exist - mkdir -p <directorey name>/<sub-direcotrey name> (-p is parent)
+
+if we need to check the port number of pgsql - tsm configuration get -k pgsql.port
+
+if we need to check all the ports assigned to processes - tsm topology list-ports (The Tableau Server repository uses two ports that are not dynamically mapped)
+
+If you need to check the TSM licenses - tsm licenses list (the default port do not show up in this command)
+
+if you want to see all the files with details- ls -ltr
+
+if you want to clean log files- tsm maintenance cleanup -l --log-files-retention 2
+
+if we need to check postgres version - pg_config --version
+
+Copying backup from one server to another server - sudo scp tableau_server_backup-2020-10-01.tsbak aragarwal@ sv2lxtabasbak01: /u01/tableau_server/backups 
+
+if you want to see cpu cores in linux server- lscpu
+
+if we need to check os version in linux server- cat /etc/os-release
+
+If you want to find if any one is presented in server - find . -iname EXAplus* , sudo find /u01 -iname EXAplus*
+
+if we need to check a packages is installed in which path - rpm -ql <package name> example:- rpm -ql apr-1.4.8-7.el7.x86_64
+
+if we need to check in which path the library is installed - locate <library name>
+
+if we need to restart the server - first we need to pass command sudo su we will move to root user then we need to pass command init 6 then the server will rstart
+
+if we need to check the all files sizes in a folder- du -sh *
+
+if we need to check files in directory- ls -lrt
+
+if you need to delete a file in folder- sudo rm -rf <file name>
+
+If you need to check load balancer IP adress- ping Instance name(eapdev.equinx.com)
+
+If you need to come out from a file without saving- :q!
+
+If you need to take bakcup of any instance- tsm maintenance backup -f tableau_uat2_backup -d
+
+If we need to restore the backup the command is - tsm maintenance restore -f (file name) example:- tsm maintenance restore -f tableau-server-backup-2024-08-27.tsbak
+
+if we need to restart the server the command is - sudo su (then press enter and after the enter) init 6
+
+If we need to copy a file from one folder to another folder with in the server by using command- sudo cp <file name> <folder location> example - sudo cp EXASOL_ODBC-7.1.16.tar.gz /home/rak
+
+if we need to move file from one server to another server - sudo scp -r EXASOL_ODBC-7.1.16.tar.gz rak@sv2lxtabapua101:/home/rak/
+
+If we need to need to chane permissions of directiores in a directory by using command - sudo chmod -R 775 *
+
+If we need to change the owner of the dierctores by using the command - sudo chown -R tdev:tdev *
+
+If we need to see all the repositrey packages by using the command - sudo yum list installed tableau-server"*"
+
+If we need to delete the repositrey packages byusing command - sudo yum remove
+
+tabcmd initialuser --username "tabdr" --password "welcome123" --server http://localhost
+
+if we need to check some of the first 10 files/folder size in directorey by using command - du -sh * | sort -rh | head 
+
+If we need to check the DB queery limit by uisng the command - tsm configuration get -k backgrounder.querylimit
+
+If we need to set the increase the background query limit to 20000sec by using command - tsm configuration set -k backgrounder.querylimit -v 20000 then after that we need to execute command:- tsm pending-changes apply
+
+If we nned to check that the ppradmin user is connecting or not to server by using the command :- tabcmd login -s https://eapuat.equinix.com -u svc-tableau-uat -p o8FT|KNX+CFfajha3^gZ$''!fP	
+
+If we need to move files from one server to another jump server by using below command - scp -p yvamsitej@sv2lxtabassit01:/home/yvamsitej/tableau-server-2023-1-8.x86_64.rpm . = from sit to jump server home "." is for moving to jump server
+
+If we need to move files from jump server to main server user directory by using below command - scp -p tableau-server-2023-1-8.x86_64.rpm yvamsitej@sv2lxtabapua101:/home/yvamsitej - from jump to POC to user directory
+
+If we need to take seeting export back-up – tsm settings export –output -config -file seetings.json
+
+If you need to enable the access of postgres – tsm data-access repository-access enable  --repository-username readonly  --repository-password Equ1n1x#Prod123
+
+if we need to run rebuild index – tsm maintenance reindex-search
+
+If we running backup command tableau said the disk space is low but you know enough disk space how we can overcome that situation – tsm maintenance backup -f -d –-override -disk-space -check 
+
+obliterate command need to run the script in scripts folder u01/app/tableau/packages/scripts = sudo ./tableau-server-obliterate -y -y -y -a
+
+If we need to create a zip log file by using command - tsm maintenance ziplogs -f <file name> (Specify a name for the zipped archive file. If no name is provided the archive is created as logs.zip. The file is written to the directory defined in the TSM basefilepath.log_archive variable. By default:) (https://help.tableau.com/current/server-linux/en-us/cli_maintenance_tsm.htm#tsm4ziplogs)
+/var/opt/tableau/tableau_server/data/tabsvc/files/log-archives/
+
+If we need to cancel any cancle any tsm job :- tsm jobs cancel --id <id number> (id number will be with cama {,} so when you are giving id number need to remove cama {,})
+
+if we need to see what are the tsm jobs running - tsm jobs list
+
+If we need to execute the script -: sh -x <script name>
+
+if we need to find a file ia a folder - find . -name "*file_name*"
+
+
+if we need to get numbering for each line in shell script in vi editor with the command- ESC:set nu
+
+if we need to take logs as zip for purticular time:- tsm maintenance ziplogs -f Deployment_logs.zip --startdate "12/18/2024 07:00" --enddate "12/18/2024 08:00"
+
+To check Inode usage in Linux, you can use the df command with the -i option. Here's the command: df -i
+If you want to exclude specific file systems from the output, you can use the -x option followed by the file system types you want to exclude. For example, to exclude tmpfs and iso9660 file systems, you can use the following command: df -i -x tmpfs -x iso9660
+
+if we need to copy file from one server to another server with out using password how it would be?
+
+To copy a file from one server to another without using a password, you can use SSH key-based authentication. Here's a step-by-step guide:
+
+Generate an SSH key pair on the source server (the server from which you want to copy the file). You can do this by running the following command in the terminal:
+
+ssh-keygen -t rsa
+Press Enter to accept the default file location and passphrase (leaving it blank for no passphrase).
+
+This will generate two files: id_rsa (private key) and id_rsa.pub (public key).
+
+Copy the public key (id_rsa.pub) to the destination server (the server where you want to copy the file). You can use the ssh-copy-id command to do this:
+
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@destination_server
+Replace user with your username on the destination server and destination_server with the IP address or hostname of the destination server.
+
+Enter the password for the destination server when prompted.
+
+Once the public key is copied, you should be able to SSH into the destination server without a password. Test it by running:
+
+ssh user@destination_server
+Now, you can use the scp command to copy the file from the source server to the destination server:
+
+scp /path/to/file user@destination_server:/path/to/destination
+Replace /path/to/file with the path to the file you want to copy and /path/to/destination with the desired location on the destination server.
+
+This method allows you to securely copy files between servers without entering a password each time.
+
+
+sudo du -a /u01/ | sort -n -r | head -n 20 - Command is used to find top 20 space consuming folders
+sudo du -a /u01/ | sort -n -r | head -n 20 - Command is used to find top 20 space consuming folders
+
+du -sh /u01/logs/logs-2023-05-23.zip
+
+need to check which service is running on the port:- netstat -tuln | grep :8060
+
+If we want to tar any folder in linux server:- sudo tar -czvf jdk-1.8.0_451-oracle-x64.tar.gz jdk-1.8.0_451-oracle-x64 (jdk-1.8.0_451-oracle-x64 is the folder name)
+
+If we want to move files from one server to another server :- scp -o KexAlgorithms=curve25519-sha256@libssh.org <file_name> tdev@sv2lxtabapdv001:/u01/app
+
+If we want to take tsm serices backup:- tsm settings export -f /u01/app/tableau/tableauserver/data/tabsvc/files/backups/settings.json
+
+scp -o KexAlgorithms=curve25519-sha256@libssh.org prod_bkp-2025-09-19.tsbak tdev@ch3lxmtabas01:/backups
+
